@@ -46,15 +46,17 @@ AdminLTE的效果演示页面，所有内容都在一个html文件中，而管�
      ```
 
    - View 模板文件配置
-
-     1. 指定 使用的布局模板
-
+   
+        
+     01. 指定 使用的布局模板
+     
         ```
       <html xmlns:th="http://www.thymeleaf.org"
         	xmlns:layout="http://www.thymeleaf.org" layout:decorator="layout/base">
         ```
-     2. 添加 代码片段获取标记（可多个获取标记）
-
+        
+     02. 添加 代码片段获取标记（可多个获取标记）
+     
         ```
         <div class="content-wrapper" layout:fragment="content">
         ```
