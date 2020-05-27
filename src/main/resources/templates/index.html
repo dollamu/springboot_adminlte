@@ -1,0 +1,19 @@
+<html xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.thymeleaf.org" layout:decorator="layout/base">
+<!-- 需要定义  thymeleaf 的 xml命名空间申明，命名为 th（文件中使用该名称，标明是thymeleaf属性） -->
+<head>
+<meta charset="UTF-8">
+<title>dollamu 的标题</title>
+</head>
+<body>
+	<div class="content-wrapper" layout:fragment="content">
+		<!-- 输出文本数据 -->
+		<div th:text="${key}"></div>		
+		<!-- 遍历list数据 -->
+		<div th:each="item:${list}" th:text="${item}"></div>
+	</div>
+	
+	<!-- 页面底部的，与业务相关的JS代码 -->
+	<script layout:fragment="tail_script" src="dist/js/demo.js"></script>
+</body>
+</html>
