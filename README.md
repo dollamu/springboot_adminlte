@@ -38,16 +38,12 @@ AdminLTE的效果演示页面，所有内容都在一个html文件中，而管�
      <html xmlns:th="http://www.thymeleaf.org">
      <!-- 需要定义  thymeleaf 的 xml命名空间申明，命名为 th（文件中使用该名称，标明是thymeleaf属性） -->
      ```
-     
 
-     
    - 布局模板文件中，添加 代码片段插入标记（可多个插入标记）
 
      ```
      <div layout:fragment="content"></div>
      ```
-
-     
 
    - View 模板文件配置
 
@@ -57,15 +53,14 @@ AdminLTE的效果演示页面，所有内容都在一个html文件中，而管�
       <html xmlns:th="http://www.thymeleaf.org"
         	xmlns:layout="http://www.thymeleaf.org" layout:decorator="layout/base">
         ```
-     
-        
-     
      2. 添加 代码片段获取标记（可多个获取标记）
-     
-     
+
         ```
         <div class="content-wrapper" layout:fragment="content">
         ```
+     
+       
+
 
 ### 广告
 欢迎到斗鱼直播间交流互动, 房间号：5262279。
